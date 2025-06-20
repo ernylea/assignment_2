@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nur Ernylea</title>
+  <link rel="icon" type="image/x-icon" href="images/icon.png">
+  <link rel="stylesheet" href="css/fav.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Nur Ernylea</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="favourite.html">Favourite</a></li>
+        <li class="dropdown">
+          <a href="#">More ▸ </a>
+          <ul class="dropdown-content">
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="family-section">
+    <div class="main">
+
+      <h2>List of my favourite</h2>
+      <hr>
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('video')"> Video</button>
+        <button class="btn" onclick="filterSelection('audio')"> Audio</button>
+      </div>
+
+
+      <div class="row">
+        <div class="column video">
+          <div class="content">
+            <h4>EXO 엑소 'Cream Soda' MV</h4>
+            <video width="250" height="145" controls>
+              <source src="video/exo.mp4" type="video/mp4">
+          </div>
+        </div>
+
+        <div class="column video">
+          <div class="content">
+            <h4>MOVING Official Trailer (2023)</h4>
+            <video width="250" height="150" controls>
+              <source src="video/trailer.mp4" type="video/mp4">
+          </div>
+        </div>
+
+
+        <div class="column audio">
+          <div class="content">
+            <h4>SABRINA LEONOR</h4>
+            <p>Title: Pendampingmu #TahtaHatiku</p>
+            <audio controls>
+              <source src="audio/songs1.ogg" type="audio/ogg">
+              <source src="audio/songs1.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+
+        <div class="column audio">
+          <div class="content">
+            <h4>MEOVV</h4>
+            <p>Title: Hands Up</p>
+            <audio controls>
+              <source src="audio/songs2.mp3" type="audio/ogg">
+              <source src="audio/songs2.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="https://facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.tiktok.com/en/" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+
+      <br>
+      <br>
+      <a href="index.html">Home</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="family.html">Family</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="favourite.html">Favourite</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+    </div>
+    <p>&copy; 2025 Ernylea.</p>
+  </footer>
+</body>
+
+</html>

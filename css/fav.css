@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  padding: 20px;
+  text-align: left;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  color: #6b1e3d;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #d6336c;
+  margin: 0;
+}
+
+/* navigation */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: left;
+  background-color: #ffe4ec;
+  border-radius: 10px;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #6b1e3d;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #f9c2d1;
+  border-radius: 8px;
+}
+
+/* dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffe4ec;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  top: -19%;
+  left: 100px;
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  padding: 10px 10px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* background */
+main {
+  padding: 40px;
+  background-color: #fff0f5;
+  min-height: 60vh;
+  text-align: center;
+}
+
+/* content */
+.content h2 {
+  color: #d6336c;
+}
+
+/* footer */
+footer {
+	background-color: #ffe4ec;
+	padding: 20px;
+	text-align: center;
+	border-top: 2px solid #ffffff;
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #6b1e3d;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* icon */
+.social-icon {
+  margin: 0 8px;
+  color: #6b1e3d;
+  font-size: 18px;
+}
+
+.social-icon:hover {
+  color: #d6336c;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fffafc;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  font-size: 50px;
+  word-break: break-word;
+  text-align: center;
+  color: #b02c4b;
+  margin-bottom: 30px;
+}
+
+/* Row setup */
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Three equal columns */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hidden by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Card content styling */
+.content {
+  background-color: #ffeef3;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(220, 120, 150, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.content:hover {
+  transform: scale(1.02);
+}
+
+/* Show filtered elements */
+.show {
+  display: block;
+}
+
+/* Filter buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  margin: 5px;
+  background-color: #fff0f5;
+  color: #b02c4b;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(180, 60, 90, 0.1);
+}
+
+.btn:hover {
+  background-color: #fcdde7;
+  color: #912f4c;
+}
+
+.btn.active {
+  background-color: #d6336c;
+  color: white;
+}
