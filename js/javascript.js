@@ -101,42 +101,6 @@ $(function () {
 		// Set the am/pm text:
 		ampm.text(now[7] + now[8]);
 
-
-		// Is there an alarm set?
-
-		if (alarm_counter > 0) {
-
-			// Decrement the counter with one second
-			alarm_counter--;
-
-			// Activate the alarm icon
-			alarm.addClass('active');
-		}
-		else if (alarm_counter == 0) {
-
-			time_is_up.fadeIn();
-
-			// Play the alarm sound. This will fail
-			// in browsers which don't support HTML5 audio
-
-			try {
-				$('#alarm-ring')[0].play();
-			}
-			catch (e) { }
-
-			alarm_counter--;
-			alarm.removeClass('active');
-		}
-		else {
-			// The alarm has been cleared
-			alarm.removeClass('active');
-		}
-
-		// Schedule this function to be run again in 1 sec
-		setTimeout(update_time, 1000);
-
-	})();
-
 	// Switch the theme
 
 	$('#switch-theme').click(function () {
